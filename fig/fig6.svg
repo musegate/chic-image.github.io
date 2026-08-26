@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="770" viewBox="25 0 1450 770" role="img" aria-labelledby="title desc">
+  <title id="title">Chic-Image v1.0 Good, Same Good, Same Bad, and Bad Preference Evaluation</title>
+  <desc id="desc">Horizontal preference distribution comparing Chic-Image v1.0 with GPT-Image-2, Gemini-3.1-Flash-Image, and Z-Image-Turbo. Same good indicates little difference and no obvious objective issue; Same bad indicates that both models contain clear objective issues such as implausibility.</desc>
+  <defs>
+    <style>
+      .cn { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
+      .label { font-size: 10px; font-weight: 700; fill: #242b39; }
+      .axis { font-size: 15px; fill: #8490a0; }
+      .legend { font-size: 18px; font-weight: 700; fill: #3c4759; }
+      .value { font-size: 18px; font-weight: 800; fill: #fff; }
+      .note { font-size: 15px; fill: #8490a0; }
+    </style>
+    <filter id="shadow" x="-5%" y="-40%" width="110%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#243550" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <rect width="1500" height="770" fill="#ffffff"/>
+
+  <!-- Stretch the chart horizontally around the canvas center to use the available width. -->
+  <g transform="translate(-150 0) scale(1.2 1)">
+  <!-- Legend: Good = Chic-Image is preferred; Bad = baseline is preferred. -->
+  <g class="cn">
+    <g transform="translate(75 0)">
+      <rect x="270" y="616" width="22" height="22" rx="4" fill="#4d77b8"/>
+      <text x="304" y="634" class="legend">Good</text>
+      <rect x="470" y="616" width="22" height="22" rx="4" fill="#9fc3df"/>
+      <text x="504" y="634" class="legend">Same good</text>
+      <rect x="750" y="616" width="22" height="22" rx="4" fill="#f2b4ac"/>
+      <text x="784" y="634" class="legend">Same bad</text>
+      <rect x="1010" y="616" width="22" height="22" rx="4" fill="#d77471"/>
+      <text x="1044" y="634" class="legend">Bad</text>
+    </g>
+    <text x="750" y="675" text-anchor="middle" class="note">Good: Chic-Image is better&#x3000;&#x3000;Same good: little difference, with no obvious objective issue&#x3000;&#x3000;Same bad: both contain clear objective issues such as implausibility&#x3000;&#x3000;Bad: the comparison model is better</text>
+  </g>
+
+  <!-- Keep the axis and all three comparison rows aligned as they move left. -->
+  <g transform="translate(-85 0)">
+  <!-- Grid and percentage axis -->
+  <g stroke="#e5e9ee" stroke-width="1.5" stroke-dasharray="4 6">
+    <path d="M480 170 V590"/><path d="M650 170 V590"/><path d="M820 170 V590"/>
+    <path d="M990 170 V590"/><path d="M1160 170 V590"/><path d="M1330 170 V590"/>
+  </g>
+  <g class="cn axis" text-anchor="middle">
+    <text x="480" y="158">0%</text><text x="650" y="158">20%</text><text x="820" y="158">40%</text>
+    <text x="990" y="158">60%</text><text x="1160" y="158">80%</text><text x="1330" y="158">100%</text>
+  </g>
+
+  <!-- GPT-Image-2: Good 941 (85.6%), Same good 72 (6.6%), Same bad 60 (5.5%), Bad 26 (2.4%) -->
+  <g class="cn">
+    <text x="422" y="244" text-anchor="end" class="label">GPT-Image-2</text>
+    <g filter="url(#shadow)">
+      <rect x="480" y="205" width="850" height="66" rx="6" fill="#f0f2f5"/>
+      <path d="M480 205 H1208 V271 H480 Z" fill="#4d77b8"/>
+      <path d="M1208 205 H1263 V271 H1208 Z" fill="#9fc3df"/>
+      <path d="M1263 205 H1310 V271 H1263 Z" fill="#f2b4ac"/>
+      <path d="M1310 205 H1324 A6 6 0 0 1 1330 211 V265 A6 6 0 0 1 1324 271 H1310 Z" fill="#d77471"/>
+    </g>
+    <text x="844" y="246" text-anchor="middle" class="value">Good 85.6%</text>
+    <text x="1236" y="246" text-anchor="middle" font-size="14" font-weight="800" fill="#355a7b">6.6%</text>
+    <text x="1287" y="246" text-anchor="middle" font-size="14" font-weight="800" fill="#8a4d4a">5.5%</text>
+    <text x="1320" y="246" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">2.4%</text>
+  </g>
+
+  <!-- Gemini-3.1-Flash-Image: Good 987 (89.8%), Same good 52 (4.7%), Same bad 40 (3.6%), Bad 20 (1.8%) -->
+  <g class="cn">
+    <text x="422" y="384" text-anchor="end" class="label">Gemini-3.1-Flash-Image</text>
+    <g filter="url(#shadow)">
+      <rect x="480" y="345" width="850" height="66" rx="6" fill="#f0f2f5"/>
+      <path d="M480 345 H1243 V411 H480 Z" fill="#4d77b8"/>
+      <path d="M1243 345 H1284 V411 H1243 Z" fill="#9fc3df"/>
+      <path d="M1284 345 H1315 V411 H1284 Z" fill="#f2b4ac"/>
+      <path d="M1315 345 H1324 A6 6 0 0 1 1330 351 V405 A6 6 0 0 1 1324 411 H1315 Z" fill="#d77471"/>
+    </g>
+    <text x="862" y="386" text-anchor="middle" class="value">Good 89.8%</text>
+    <text x="1264" y="386" text-anchor="middle" font-size="12" font-weight="800" fill="#355a7b">4.7%</text>
+    <text x="1299" y="386" text-anchor="middle" font-size="11" font-weight="800" fill="#8a4d4a">3.6%</text>
+    <text x="1322" y="386" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">1.8%</text>
+  </g>
+
+  <!-- Z-Image-Turbo: Good 286 (26.0%), Same good 560 (51.0%), Same bad 98 (8.9%), Bad 155 (14.1%) -->
+  <g class="cn">
+    <text x="422" y="524" text-anchor="end" class="label">Z-Image-Turbo</text>
+    <g filter="url(#shadow)">
+      <rect x="480" y="485" width="850" height="66" rx="6" fill="#f0f2f5"/>
+      <path d="M480 485 H701 V551 H480 Z" fill="#4d77b8"/>
+      <path d="M701 485 H1134 V551 H701 Z" fill="#9fc3df"/>
+      <path d="M1134 485 H1210 V551 H1134 Z" fill="#f2b4ac"/>
+      <path d="M1210 485 H1324 A6 6 0 0 1 1330 491 V545 A6 6 0 0 1 1324 551 H1210 Z" fill="#d77471"/>
+    </g>
+    <text x="591" y="526" text-anchor="middle" class="value">Good 26.0%</text>
+    <text x="918" y="526" text-anchor="middle" class="value" fill="#355a7b">51.0%</text>
+    <text x="1172" y="526" text-anchor="middle" font-size="14" font-weight="800" fill="#8a4d4a">8.9%</text>
+    <text x="1270" y="526" text-anchor="middle" class="value">Bad 14.1%</text>
+  </g>
+  </g>
+  </g>
+
+</svg>
