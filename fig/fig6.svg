@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1450" height="770" viewBox="25 0 1450 770" role="img" aria-labelledby="title desc">
   <title id="title">Chic-Image v1.0 Good, Same Good, Same Bad, and Bad Preference Evaluation</title>
-  <desc id="desc">Horizontal preference distribution comparing Chic-Image v1.0 with GPT-Image-2, Gemini-3.1-Flash-Image, and Z-Image-Turbo. Same good indicates little difference and no obvious objective issue; Same bad indicates that both models contain clear objective issues such as implausibility.</desc>
+  <desc id="desc">Horizontal preference distribution comparing Chic-Image v1.0 with GPT-Image-2, Gemini-3.1-Flash-Image, and Z-Image-Turbo. Same good indicates little difference and no obvious visual defects; Same bad indicates that both models exhibit obvious visual defects.</desc>
   <defs>
     <style>
       .cn { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
@@ -31,7 +31,10 @@
       <rect x="1010" y="616" width="22" height="22" rx="4" fill="#d77471"/>
       <text x="1044" y="634" class="legend">Bad</text>
     </g>
-    <text x="750" y="675" text-anchor="middle" class="note">Good: Chic-Image is better&#x3000;&#x3000;Same good: little difference, with no obvious objective issue&#x3000;&#x3000;Same bad: both contain clear objective issues such as implausibility&#x3000;&#x3000;Bad: the comparison model is better</text>
+    <text x="750" y="670" text-anchor="middle" class="note" font-size="12">
+      <tspan x="750" dy="0">Good: Chic-Image is better · Same good: little difference, with no obvious visual defects</tspan>
+      <tspan x="750" dy="18">Same bad: both exhibit obvious visual defects · Bad: the comparison model is better</tspan>
+    </text>
   </g>
 
   <!-- Keep the axis and all three comparison rows aligned as they move left. -->
